@@ -1,0 +1,99 @@
+/* ==========================================================
+   YOJAK NEXUS DEMO - global styles and design tokens
+   Brand colours are sampled from the supplied logo (approximate).
+   ========================================================== */
+
+:root {
+  --navy: #14305a;
+  --navy-deep: #0d2142;
+  --teal: #2596a8;
+  --teal-soft: #d9eef1;
+  --green: #0e7060;
+  --green-soft: #d8ece8;
+
+  --bg: #f4f6f6;
+  --surface: #ffffff;
+  --text: #1b2a3f;
+  --text-muted: #5b6b7e;
+  --border: #dfe5e8;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 1px 3px rgba(20, 48, 90, 0.08);
+  --shadow-md: 0 8px 24px rgba(20, 48, 90, 0.1);
+
+  --container: 1200px;
+  --transition: 0.2s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--navy);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--green);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
